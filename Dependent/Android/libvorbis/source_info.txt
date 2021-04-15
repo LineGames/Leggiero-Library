@@ -1,0 +1,8 @@
+Vorbis
+https://xiph.org/vorbis/
+
+under BSD License
+
+using Release 1.3.7
+
+(Library used by Leggiero Engine in Android)

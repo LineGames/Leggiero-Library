@@ -1,0 +1,8 @@
+libb64
+http://libb64.sourceforge.net/
+
+on Public Domain
+
+using Release 1.2
+
+(Library used by Leggiero Engine)

@@ -1,0 +1,6 @@
+minimp3
+https://github.com/lieff/minimp3
+
+under CC0-1.0 License
+
+(Library used by Leggiero Engine)

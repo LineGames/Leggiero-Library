@@ -1,0 +1,9 @@
+oboe
+https://github.com/google/oboe
+
+under Apache 2.0 License
+
+using Release 1.5.0
+ - with modification of issue https://github.com/google/oboe/issues/1148
+
+(Library used by Leggiero Engine in Android)

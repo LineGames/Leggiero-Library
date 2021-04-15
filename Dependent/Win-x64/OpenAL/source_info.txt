@@ -1,0 +1,11 @@
+OpenAL
+by Creative Labs, Inc.
+http://www.openal.org/
+
+only used redist binary
+under the License as attached LICENSE.txt
+(also can be found in redist installer binary)
+
+using 1.1
+
+(Library used by Leggiero Engine in Windows)

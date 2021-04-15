@@ -1,0 +1,8 @@
+FreeType
+https://www.freetype.org/
+
+under FreeType License
+
+using Release 2.10.4
+
+(Library used by Leggiero Engine in iOS)

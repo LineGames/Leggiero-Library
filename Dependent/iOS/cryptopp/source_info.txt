@@ -1,0 +1,9 @@
+Crypto++
+https://www.cryptopp.com/
+
+under Boost Software License 1.0 and so on.
+  - see attached License.txt file
+
+using Release 8.5.0
+
+(Library used by Leggiero Engine in iOS)

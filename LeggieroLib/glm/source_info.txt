@@ -1,0 +1,8 @@
+OpenGL Mathematics (GLM)
+https://glm.g-truc.net/
+
+under MIT License
+
+using Release 0.9.9.8
+
+(Library used by Leggiero Engine)

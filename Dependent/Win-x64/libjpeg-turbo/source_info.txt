@@ -1,0 +1,8 @@
+libjpeg-turbo
+https://libjpeg-turbo.org/
+
+under zlib License
+
+using Release 2.0.90
+
+(Library used by Leggiero Engine in Windows)

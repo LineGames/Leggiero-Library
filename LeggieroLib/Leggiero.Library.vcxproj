@@ -1,0 +1,1164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="NsightTegraProject">
+    <NsightTegraProjectRevisionNumber>11</NsightTegraProjectRevisionNumber>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AArch64-Android-NVIDIA">
+      <Configuration>Debug</Configuration>
+      <Platform>AArch64-Android-NVIDIA</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM-Android-NVIDIA">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM-Android-NVIDIA</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Tegra-Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AArch64-Android-NVIDIA">
+      <Configuration>Release</Configuration>
+      <Platform>AArch64-Android-NVIDIA</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM-Android-NVIDIA">
+      <Configuration>Release</Configuration>
+      <Platform>ARM-Android-NVIDIA</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Tegra-Android">
+      <Configuration>Release</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping|AArch64-Android-NVIDIA">
+      <Configuration>Shipping</Configuration>
+      <Platform>AArch64-Android-NVIDIA</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping|ARM-Android-NVIDIA">
+      <Configuration>Shipping</Configuration>
+      <Platform>ARM-Android-NVIDIA</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping|Tegra-Android">
+      <Configuration>Shipping</Configuration>
+      <Platform>Tegra-Android</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{2226291f-187f-4271-8471-4cd82481388b}</ProjectGuid>
+    <RootNamespace>LeggieroLibrary</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidMinAPI>android-21</AndroidMinAPI>
+    <AndroidTargetAPI>android-28</AndroidTargetAPI>
+    <NdkToolchainVersion>clang-7.0</NdkToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidMinAPI>android-21</AndroidMinAPI>
+    <AndroidTargetAPI>android-28</AndroidTargetAPI>
+    <NdkToolchainVersion>clang-7.0</NdkToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidMinAPI>android-21</AndroidMinAPI>
+    <AndroidTargetAPI>android-28</AndroidTargetAPI>
+    <NdkToolchainVersion>clang-7.0</NdkToolchainVersion>
+    <AndroidArch>multiple</AndroidArch>
+    <PlatformsToPackage>ARM;AArch64</PlatformsToPackage>
+    <AndroidNativeAPI>UseMin</AndroidNativeAPI>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration" Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidMinAPI>android-21</AndroidMinAPI>
+    <AndroidTargetAPI>android-28</AndroidTargetAPI>
+    <NdkToolchainVersion>clang-7.0</NdkToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidMinAPI>android-21</AndroidMinAPI>
+    <AndroidTargetAPI>android-28</AndroidTargetAPI>
+    <NdkToolchainVersion>clang-7.0</NdkToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidMinAPI>android-21</AndroidMinAPI>
+    <AndroidTargetAPI>android-28</AndroidTargetAPI>
+    <NdkToolchainVersion>clang-7.0</NdkToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidMinAPI>android-21</AndroidMinAPI>
+    <AndroidTargetAPI>android-28</AndroidTargetAPI>
+    <NdkToolchainVersion>clang-7.0</NdkToolchainVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidMinAPI>android-21</AndroidMinAPI>
+    <AndroidTargetAPI>android-28</AndroidTargetAPI>
+    <NdkToolchainVersion>clang-7.0</NdkToolchainVersion>
+    <AndroidArch>multiple</AndroidArch>
+    <PlatformsToPackage>ARM;AArch64</PlatformsToPackage>
+    <AndroidNativeAPI>UseMin</AndroidNativeAPI>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <AndroidMinAPI>android-21</AndroidMinAPI>
+    <AndroidTargetAPI>android-28</AndroidTargetAPI>
+    <NdkToolchainVersion>clang-7.0</NdkToolchainVersion>
+    <AndroidArch>multiple</AndroidArch>
+    <PlatformsToPackage>ARM;AArch64</PlatformsToPackage>
+    <AndroidNativeAPI>UseMin</AndroidNativeAPI>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>$(ProjectName)_d</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>libLeggieroDep</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>libLeggieroDep</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>libLeggieroDep</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>libLeggieroDep</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>libLeggieroDep</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>libLeggieroDep</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>libLeggieroDep</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>libLeggieroDep</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">
+    <OutDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\</OutDir>
+    <IntDir>$(SolutionDir).Build\$(Platform)\$(Configuration)\Intermediate\$(ProjectName)\</IntDir>
+    <TargetName>libLeggieroDep</TargetName>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_LIB;ZLIB_WINAPI;ASMV;ASMINF;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Win-x64\pthreads4w\include\;$(ProjectDir)..\Dependent\Win-x64\PowerVR\include\;$(ProjectDir)..\Dependent\Win-x64\zlib\;$(ProjectDir)..\Dependent\Win-x64\OpenALSoft\include\;$(ProjectDir)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_LIB;ZLIB_WINAPI;ASMV;ASMINF;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Win-x64\pthreads4w\include\;$(ProjectDir)..\Dependent\Win-x64\PowerVR\include\;$(ProjectDir)..\Dependent\Win-x64\zlib\;$(ProjectDir)..\Dependent\Win-x64\OpenALSoft\include\;$(ProjectDir)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4267;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Android\cpufeatures\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>PNG_USER_CONFIG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Android\cpufeatures\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>PNG_USER_CONFIG;_ARM64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Android\cpufeatures\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>PNG_USER_CONFIG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Android\cpufeatures\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>PNG_USER_CONFIG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Android\cpufeatures\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>PNG_USER_CONFIG;_ARM64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Android\cpufeatures\;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <PreprocessorDefinitions>PNG_USER_CONFIG;_ARM64;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">
+    <ClCompile>
+      <GccExceptionHandling>true</GccExceptionHandling>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Dependent\Android\cpufeatures\cpu-features.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="AHEasing\easing.h" />
+    <ClInclude Include="b64\cdecode.h" />
+    <ClInclude Include="b64\cencode.h" />
+    <ClInclude Include="b64\decode.h" />
+    <ClInclude Include="b64\encode.h" />
+    <ClInclude Include="concurrentqueue\blockingconcurrentqueue.h" />
+    <ClInclude Include="concurrentqueue\concurrentqueue.h" />
+    <ClInclude Include="concurrentqueue\lightweightsemaphore.h" />
+    <ClInclude Include="fmt\chrono.h" />
+    <ClInclude Include="fmt\color.h" />
+    <ClInclude Include="fmt\compile.h" />
+    <ClInclude Include="fmt\core.h" />
+    <ClInclude Include="fmt\format-inl.h" />
+    <ClInclude Include="fmt\format.h" />
+    <ClInclude Include="fmt\locale.h" />
+    <ClInclude Include="fmt\os.h" />
+    <ClInclude Include="fmt\ostream.h" />
+    <ClInclude Include="fmt\posix.h" />
+    <ClInclude Include="fmt\printf.h" />
+    <ClInclude Include="fmt\ranges.h" />
+    <ClInclude Include="GLES3.h" />
+    <ClInclude Include="glm\common.hpp" />
+    <ClInclude Include="glm\detail\compute_common.hpp" />
+    <ClInclude Include="glm\detail\compute_vector_relational.hpp" />
+    <ClInclude Include="glm\detail\qualifier.hpp" />
+    <ClInclude Include="glm\detail\setup.hpp" />
+    <ClInclude Include="glm\detail\type_float.hpp" />
+    <ClInclude Include="glm\detail\type_half.hpp" />
+    <ClInclude Include="glm\detail\type_mat2x2.hpp" />
+    <ClInclude Include="glm\detail\type_mat2x3.hpp" />
+    <ClInclude Include="glm\detail\type_mat2x4.hpp" />
+    <ClInclude Include="glm\detail\type_mat3x2.hpp" />
+    <ClInclude Include="glm\detail\type_mat3x3.hpp" />
+    <ClInclude Include="glm\detail\type_mat3x4.hpp" />
+    <ClInclude Include="glm\detail\type_mat4x2.hpp" />
+    <ClInclude Include="glm\detail\type_mat4x3.hpp" />
+    <ClInclude Include="glm\detail\type_mat4x4.hpp" />
+    <ClInclude Include="glm\detail\type_quat.hpp" />
+    <ClInclude Include="glm\detail\type_vec1.hpp" />
+    <ClInclude Include="glm\detail\type_vec2.hpp" />
+    <ClInclude Include="glm\detail\type_vec3.hpp" />
+    <ClInclude Include="glm\detail\type_vec4.hpp" />
+    <ClInclude Include="glm\detail\_features.hpp" />
+    <ClInclude Include="glm\detail\_fixes.hpp" />
+    <ClInclude Include="glm\detail\_noise.hpp" />
+    <ClInclude Include="glm\detail\_swizzle.hpp" />
+    <ClInclude Include="glm\detail\_swizzle_func.hpp" />
+    <ClInclude Include="glm\detail\_vectorize.hpp" />
+    <ClInclude Include="glm\exponential.hpp" />
+    <ClInclude Include="glm\ext.hpp" />
+    <ClInclude Include="glm\ext\matrix_clip_space.hpp" />
+    <ClInclude Include="glm\ext\matrix_common.hpp" />
+    <ClInclude Include="glm\ext\matrix_double2x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_double2x2_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_double2x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_double2x3_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_double2x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_double2x4_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_double3x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_double3x2_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_double3x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_double3x3_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_double3x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_double3x4_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_double4x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_double4x2_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_double4x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_double4x3_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_double4x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_double4x4_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_float2x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_float2x2_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_float2x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_float2x3_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_float2x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_float2x4_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_float3x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_float3x2_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_float3x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_float3x3_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_float3x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_float3x4_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_float4x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_float4x2_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_float4x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_float4x3_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_float4x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_float4x4_precision.hpp" />
+    <ClInclude Include="glm\ext\matrix_int2x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_int2x2_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_int2x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_int2x3_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_int2x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_int2x4_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_int3x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_int3x2_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_int3x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_int3x3_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_int3x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_int3x4_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_int4x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_int4x2_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_int4x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_int4x3_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_int4x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_int4x4_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_projection.hpp" />
+    <ClInclude Include="glm\ext\matrix_relational.hpp" />
+    <ClInclude Include="glm\ext\matrix_transform.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint2x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint2x2_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint2x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint2x3_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint2x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint2x4_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint3x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint3x2_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint3x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint3x3_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint3x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint3x4_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint4x2.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint4x2_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint4x3.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint4x3_sized.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint4x4.hpp" />
+    <ClInclude Include="glm\ext\matrix_uint4x4_sized.hpp" />
+    <ClInclude Include="glm\ext\quaternion_common.hpp" />
+    <ClInclude Include="glm\ext\quaternion_double.hpp" />
+    <ClInclude Include="glm\ext\quaternion_double_precision.hpp" />
+    <ClInclude Include="glm\ext\quaternion_exponential.hpp" />
+    <ClInclude Include="glm\ext\quaternion_float.hpp" />
+    <ClInclude Include="glm\ext\quaternion_float_precision.hpp" />
+    <ClInclude Include="glm\ext\quaternion_geometric.hpp" />
+    <ClInclude Include="glm\ext\quaternion_relational.hpp" />
+    <ClInclude Include="glm\ext\quaternion_transform.hpp" />
+    <ClInclude Include="glm\ext\quaternion_trigonometric.hpp" />
+    <ClInclude Include="glm\ext\scalar_common.hpp" />
+    <ClInclude Include="glm\ext\scalar_constants.hpp" />
+    <ClInclude Include="glm\ext\scalar_integer.hpp" />
+    <ClInclude Include="glm\ext\scalar_int_sized.hpp" />
+    <ClInclude Include="glm\ext\scalar_packing.hpp" />
+    <ClInclude Include="glm\ext\scalar_relational.hpp" />
+    <ClInclude Include="glm\ext\scalar_uint_sized.hpp" />
+    <ClInclude Include="glm\ext\scalar_ulp.hpp" />
+    <ClInclude Include="glm\ext\vector_bool1.hpp" />
+    <ClInclude Include="glm\ext\vector_bool1_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_bool2.hpp" />
+    <ClInclude Include="glm\ext\vector_bool2_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_bool3.hpp" />
+    <ClInclude Include="glm\ext\vector_bool3_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_bool4.hpp" />
+    <ClInclude Include="glm\ext\vector_bool4_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_common.hpp" />
+    <ClInclude Include="glm\ext\vector_double1.hpp" />
+    <ClInclude Include="glm\ext\vector_double1_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_double2.hpp" />
+    <ClInclude Include="glm\ext\vector_double2_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_double3.hpp" />
+    <ClInclude Include="glm\ext\vector_double3_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_double4.hpp" />
+    <ClInclude Include="glm\ext\vector_double4_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_float1.hpp" />
+    <ClInclude Include="glm\ext\vector_float1_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_float2.hpp" />
+    <ClInclude Include="glm\ext\vector_float2_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_float3.hpp" />
+    <ClInclude Include="glm\ext\vector_float3_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_float4.hpp" />
+    <ClInclude Include="glm\ext\vector_float4_precision.hpp" />
+    <ClInclude Include="glm\ext\vector_int1.hpp" />
+    <ClInclude Include="glm\ext\vector_int1_sized.hpp" />
+    <ClInclude Include="glm\ext\vector_int2.hpp" />
+    <ClInclude Include="glm\ext\vector_int2_sized.hpp" />
+    <ClInclude Include="glm\ext\vector_int3.hpp" />
+    <ClInclude Include="glm\ext\vector_int3_sized.hpp" />
+    <ClInclude Include="glm\ext\vector_int4.hpp" />
+    <ClInclude Include="glm\ext\vector_int4_sized.hpp" />
+    <ClInclude Include="glm\ext\vector_integer.hpp" />
+    <ClInclude Include="glm\ext\vector_packing.hpp" />
+    <ClInclude Include="glm\ext\vector_relational.hpp" />
+    <ClInclude Include="glm\ext\vector_uint1.hpp" />
+    <ClInclude Include="glm\ext\vector_uint1_sized.hpp" />
+    <ClInclude Include="glm\ext\vector_uint2.hpp" />
+    <ClInclude Include="glm\ext\vector_uint2_sized.hpp" />
+    <ClInclude Include="glm\ext\vector_uint3.hpp" />
+    <ClInclude Include="glm\ext\vector_uint3_sized.hpp" />
+    <ClInclude Include="glm\ext\vector_uint4.hpp" />
+    <ClInclude Include="glm\ext\vector_uint4_sized.hpp" />
+    <ClInclude Include="glm\ext\vector_ulp.hpp" />
+    <ClInclude Include="glm\fwd.hpp" />
+    <ClInclude Include="glm\geometric.hpp" />
+    <ClInclude Include="glm\glm.hpp" />
+    <ClInclude Include="glm\gtc\bitfield.hpp" />
+    <ClInclude Include="glm\gtc\color_space.hpp" />
+    <ClInclude Include="glm\gtc\constants.hpp" />
+    <ClInclude Include="glm\gtc\epsilon.hpp" />
+    <ClInclude Include="glm\gtc\integer.hpp" />
+    <ClInclude Include="glm\gtc\matrix_access.hpp" />
+    <ClInclude Include="glm\gtc\matrix_integer.hpp" />
+    <ClInclude Include="glm\gtc\matrix_inverse.hpp" />
+    <ClInclude Include="glm\gtc\matrix_transform.hpp" />
+    <ClInclude Include="glm\gtc\noise.hpp" />
+    <ClInclude Include="glm\gtc\packing.hpp" />
+    <ClInclude Include="glm\gtc\quaternion.hpp" />
+    <ClInclude Include="glm\gtc\random.hpp" />
+    <ClInclude Include="glm\gtc\reciprocal.hpp" />
+    <ClInclude Include="glm\gtc\round.hpp" />
+    <ClInclude Include="glm\gtc\type_aligned.hpp" />
+    <ClInclude Include="glm\gtc\type_precision.hpp" />
+    <ClInclude Include="glm\gtc\type_ptr.hpp" />
+    <ClInclude Include="glm\gtc\ulp.hpp" />
+    <ClInclude Include="glm\gtc\vec1.hpp" />
+    <ClInclude Include="glm\gtx\associated_min_max.hpp" />
+    <ClInclude Include="glm\gtx\bit.hpp" />
+    <ClInclude Include="glm\gtx\closest_point.hpp" />
+    <ClInclude Include="glm\gtx\color_encoding.hpp" />
+    <ClInclude Include="glm\gtx\color_space.hpp" />
+    <ClInclude Include="glm\gtx\color_space_YCoCg.hpp" />
+    <ClInclude Include="glm\gtx\common.hpp" />
+    <ClInclude Include="glm\gtx\compatibility.hpp" />
+    <ClInclude Include="glm\gtx\component_wise.hpp" />
+    <ClInclude Include="glm\gtx\dual_quaternion.hpp" />
+    <ClInclude Include="glm\gtx\easing.hpp" />
+    <ClInclude Include="glm\gtx\euler_angles.hpp" />
+    <ClInclude Include="glm\gtx\extend.hpp" />
+    <ClInclude Include="glm\gtx\extended_min_max.hpp" />
+    <ClInclude Include="glm\gtx\exterior_product.hpp" />
+    <ClInclude Include="glm\gtx\fast_exponential.hpp" />
+    <ClInclude Include="glm\gtx\fast_square_root.hpp" />
+    <ClInclude Include="glm\gtx\fast_trigonometry.hpp" />
+    <ClInclude Include="glm\gtx\functions.hpp" />
+    <ClInclude Include="glm\gtx\gradient_paint.hpp" />
+    <ClInclude Include="glm\gtx\handed_coordinate_space.hpp" />
+    <ClInclude Include="glm\gtx\hash.hpp" />
+    <ClInclude Include="glm\gtx\integer.hpp" />
+    <ClInclude Include="glm\gtx\intersect.hpp" />
+    <ClInclude Include="glm\gtx\io.hpp" />
+    <ClInclude Include="glm\gtx\log_base.hpp" />
+    <ClInclude Include="glm\gtx\matrix_cross_product.hpp" />
+    <ClInclude Include="glm\gtx\matrix_decompose.hpp" />
+    <ClInclude Include="glm\gtx\matrix_factorisation.hpp" />
+    <ClInclude Include="glm\gtx\matrix_interpolation.hpp" />
+    <ClInclude Include="glm\gtx\matrix_major_storage.hpp" />
+    <ClInclude Include="glm\gtx\matrix_operation.hpp" />
+    <ClInclude Include="glm\gtx\matrix_query.hpp" />
+    <ClInclude Include="glm\gtx\matrix_transform_2d.hpp" />
+    <ClInclude Include="glm\gtx\mixed_product.hpp" />
+    <ClInclude Include="glm\gtx\norm.hpp" />
+    <ClInclude Include="glm\gtx\normal.hpp" />
+    <ClInclude Include="glm\gtx\normalize_dot.hpp" />
+    <ClInclude Include="glm\gtx\number_precision.hpp" />
+    <ClInclude Include="glm\gtx\optimum_pow.hpp" />
+    <ClInclude Include="glm\gtx\orthonormalize.hpp" />
+    <ClInclude Include="glm\gtx\perpendicular.hpp" />
+    <ClInclude Include="glm\gtx\polar_coordinates.hpp" />
+    <ClInclude Include="glm\gtx\projection.hpp" />
+    <ClInclude Include="glm\gtx\quaternion.hpp" />
+    <ClInclude Include="glm\gtx\range.hpp" />
+    <ClInclude Include="glm\gtx\raw_data.hpp" />
+    <ClInclude Include="glm\gtx\rotate_normalized_axis.hpp" />
+    <ClInclude Include="glm\gtx\rotate_vector.hpp" />
+    <ClInclude Include="glm\gtx\scalar_multiplication.hpp" />
+    <ClInclude Include="glm\gtx\scalar_relational.hpp" />
+    <ClInclude Include="glm\gtx\spline.hpp" />
+    <ClInclude Include="glm\gtx\std_based_type.hpp" />
+    <ClInclude Include="glm\gtx\string_cast.hpp" />
+    <ClInclude Include="glm\gtx\texture.hpp" />
+    <ClInclude Include="glm\gtx\transform.hpp" />
+    <ClInclude Include="glm\gtx\transform2.hpp" />
+    <ClInclude Include="glm\gtx\type_aligned.hpp" />
+    <ClInclude Include="glm\gtx\type_trait.hpp" />
+    <ClInclude Include="glm\gtx\vector_angle.hpp" />
+    <ClInclude Include="glm\gtx\vector_query.hpp" />
+    <ClInclude Include="glm\gtx\vec_swizzle.hpp" />
+    <ClInclude Include="glm\gtx\wrap.hpp" />
+    <ClInclude Include="glm\integer.hpp" />
+    <ClInclude Include="glm\mat2x2.hpp" />
+    <ClInclude Include="glm\mat2x3.hpp" />
+    <ClInclude Include="glm\mat2x4.hpp" />
+    <ClInclude Include="glm\mat3x2.hpp" />
+    <ClInclude Include="glm\mat3x3.hpp" />
+    <ClInclude Include="glm\mat3x4.hpp" />
+    <ClInclude Include="glm\mat4x2.hpp" />
+    <ClInclude Include="glm\mat4x3.hpp" />
+    <ClInclude Include="glm\mat4x4.hpp" />
+    <ClInclude Include="glm\matrix.hpp" />
+    <ClInclude Include="glm\packing.hpp" />
+    <ClInclude Include="glm\simd\common.h" />
+    <ClInclude Include="glm\simd\exponential.h" />
+    <ClInclude Include="glm\simd\geometric.h" />
+    <ClInclude Include="glm\simd\integer.h" />
+    <ClInclude Include="glm\simd\matrix.h" />
+    <ClInclude Include="glm\simd\neon.h" />
+    <ClInclude Include="glm\simd\packing.h" />
+    <ClInclude Include="glm\simd\platform.h" />
+    <ClInclude Include="glm\simd\trigonometric.h" />
+    <ClInclude Include="glm\simd\vector_relational.h" />
+    <ClInclude Include="glm\trigonometric.hpp" />
+    <ClInclude Include="glm\vec2.hpp" />
+    <ClInclude Include="glm\vec3.hpp" />
+    <ClInclude Include="glm\vec4.hpp" />
+    <ClInclude Include="glm\vector_relational.hpp" />
+    <ClInclude Include="libpng\png.h" />
+    <ClInclude Include="libpng\pngconf.h" />
+    <ClInclude Include="libpng\pnginfo.h" />
+    <ClInclude Include="libpng\pnglibconf.h" />
+    <ClInclude Include="libpng\pngpriv.h" />
+    <ClInclude Include="libpng\pngstruct.h" />
+    <ClInclude Include="libpng\pngusr.h" />
+    <ClInclude Include="libpng\pngusr_AArch64.h" />
+    <ClInclude Include="libpng\pngusr_Arm.h" />
+    <ClInclude Include="libpng\pngusr_WinPC.h" />
+    <ClInclude Include="minimp3\minimp3.h" />
+    <ClInclude Include="minimp3\minimp3_ex.h" />
+    <ClInclude Include="OpenAL.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="readerwriterqueue\atomicops.h" />
+    <ClInclude Include="readerwriterqueue\readerwriterqueue.h" />
+    <ClInclude Include="tinyxml2\tinyxml2.h" />
+    <ClInclude Include="utfcpp\utf8.h" />
+    <ClInclude Include="utfcpp\utf8\checked.h" />
+    <ClInclude Include="utfcpp\utf8\core.h" />
+    <ClInclude Include="utfcpp\utf8\cpp11.h" />
+    <ClInclude Include="utfcpp\utf8\unchecked.h" />
+    <ClInclude Include="zlib\crc32.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="zlib\deflate.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="zlib\inffast.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="zlib\inflate.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="zlib\inftrees.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="zlib\trees.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="zlib\zconf.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="zlib\zlib.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="zlib\zutil.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Dependent\Android\cpufeatures\cpu-features.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="AHEasing\easing.c" />
+    <ClCompile Include="b64\src\cdecode.c" />
+    <ClCompile Include="b64\src\cencode.c" />
+    <ClCompile Include="fmt\src\format.cc" />
+    <ClCompile Include="fmt\src\os.cc" />
+    <ClCompile Include="glm\detail\glm.cpp" />
+    <ClCompile Include="libpng\arm\android-ndk.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="libpng\arm\arm_init.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="libpng\arm\filter_neon_intrinsics.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="libpng\arm\palette_neon_intrinsics.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="libpng\intel\filter_sse2_intrinsics.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="libpng\intel\intel_init.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="libpng\png.c" />
+    <ClCompile Include="libpng\pngerror.c" />
+    <ClCompile Include="libpng\pngget.c" />
+    <ClCompile Include="libpng\pngmem.c" />
+    <ClCompile Include="libpng\pngpread.c" />
+    <ClCompile Include="libpng\pngread.c" />
+    <ClCompile Include="libpng\pngrio.c" />
+    <ClCompile Include="libpng\pngrtran.c" />
+    <ClCompile Include="libpng\pngrutil.c" />
+    <ClCompile Include="libpng\pngset.c" />
+    <ClCompile Include="libpng\pngtrans.c" />
+    <ClCompile Include="libpng\pngwio.c" />
+    <ClCompile Include="libpng\pngwrite.c" />
+    <ClCompile Include="libpng\pngwtran.c" />
+    <ClCompile Include="libpng\pngwutil.c" />
+    <ClCompile Include="minimp3\minimp3.cpp" />
+    <ClCompile Include="tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="zlib\adler32.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\compress.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\crc32.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\deflate.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <MASM Include="zlib\gvmat64.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </MASM>
+    <ClCompile Include="zlib\gzclose.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\gzlib.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\gzread.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\gzwrite.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\infback.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\inffas8664.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\inffast.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <MASM Include="zlib\inffasx64.asm">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </MASM>
+    <ClCompile Include="zlib\inflate.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\inftrees.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\trees.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\uncompr.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="zlib\zutil.c">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|ARM-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Tegra-Android'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Shipping|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|AArch64-Android-NVIDIA'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="glm\detail\func_common.inl" />
+    <None Include="glm\detail\func_common_simd.inl" />
+    <None Include="glm\detail\func_exponential.inl" />
+    <None Include="glm\detail\func_exponential_simd.inl" />
+    <None Include="glm\detail\func_geometric.inl" />
+    <None Include="glm\detail\func_geometric_simd.inl" />
+    <None Include="glm\detail\func_integer.inl" />
+    <None Include="glm\detail\func_integer_simd.inl" />
+    <None Include="glm\detail\func_matrix.inl" />
+    <None Include="glm\detail\func_matrix_simd.inl" />
+    <None Include="glm\detail\func_packing.inl" />
+    <None Include="glm\detail\func_packing_simd.inl" />
+    <None Include="glm\detail\func_trigonometric.inl" />
+    <None Include="glm\detail\func_trigonometric_simd.inl" />
+    <None Include="glm\detail\func_vector_relational.inl" />
+    <None Include="glm\detail\func_vector_relational_simd.inl" />
+    <None Include="glm\detail\type_half.inl" />
+    <None Include="glm\detail\type_mat2x2.inl" />
+    <None Include="glm\detail\type_mat2x3.inl" />
+    <None Include="glm\detail\type_mat2x4.inl" />
+    <None Include="glm\detail\type_mat3x2.inl" />
+    <None Include="glm\detail\type_mat3x3.inl" />
+    <None Include="glm\detail\type_mat3x4.inl" />
+    <None Include="glm\detail\type_mat4x2.inl" />
+    <None Include="glm\detail\type_mat4x3.inl" />
+    <None Include="glm\detail\type_mat4x4.inl" />
+    <None Include="glm\detail\type_mat4x4_simd.inl" />
+    <None Include="glm\detail\type_quat.inl" />
+    <None Include="glm\detail\type_quat_simd.inl" />
+    <None Include="glm\detail\type_vec1.inl" />
+    <None Include="glm\detail\type_vec2.inl" />
+    <None Include="glm\detail\type_vec3.inl" />
+    <None Include="glm\detail\type_vec4.inl" />
+    <None Include="glm\detail\type_vec4_simd.inl" />
+    <None Include="glm\ext\matrix_clip_space.inl" />
+    <None Include="glm\ext\matrix_common.inl" />
+    <None Include="glm\ext\matrix_projection.inl" />
+    <None Include="glm\ext\matrix_relational.inl" />
+    <None Include="glm\ext\matrix_transform.inl" />
+    <None Include="glm\ext\quaternion_common.inl" />
+    <None Include="glm\ext\quaternion_common_simd.inl" />
+    <None Include="glm\ext\quaternion_exponential.inl" />
+    <None Include="glm\ext\quaternion_geometric.inl" />
+    <None Include="glm\ext\quaternion_relational.inl" />
+    <None Include="glm\ext\quaternion_transform.inl" />
+    <None Include="glm\ext\quaternion_trigonometric.inl" />
+    <None Include="glm\ext\scalar_common.inl" />
+    <None Include="glm\ext\scalar_constants.inl" />
+    <None Include="glm\ext\scalar_integer.inl" />
+    <None Include="glm\ext\scalar_packing.inl" />
+    <None Include="glm\ext\scalar_relational.inl" />
+    <None Include="glm\ext\scalar_ulp.inl" />
+    <None Include="glm\ext\vector_common.inl" />
+    <None Include="glm\ext\vector_integer.inl" />
+    <None Include="glm\ext\vector_packing.inl" />
+    <None Include="glm\ext\vector_relational.inl" />
+    <None Include="glm\ext\vector_ulp.inl" />
+    <None Include="glm\gtc\bitfield.inl" />
+    <None Include="glm\gtc\color_space.inl" />
+    <None Include="glm\gtc\constants.inl" />
+    <None Include="glm\gtc\epsilon.inl" />
+    <None Include="glm\gtc\integer.inl" />
+    <None Include="glm\gtc\matrix_access.inl" />
+    <None Include="glm\gtc\matrix_inverse.inl" />
+    <None Include="glm\gtc\matrix_transform.inl" />
+    <None Include="glm\gtc\noise.inl" />
+    <None Include="glm\gtc\packing.inl" />
+    <None Include="glm\gtc\quaternion.inl" />
+    <None Include="glm\gtc\quaternion_simd.inl" />
+    <None Include="glm\gtc\random.inl" />
+    <None Include="glm\gtc\reciprocal.inl" />
+    <None Include="glm\gtc\round.inl" />
+    <None Include="glm\gtc\type_precision.inl" />
+    <None Include="glm\gtc\type_ptr.inl" />
+    <None Include="glm\gtc\ulp.inl" />
+    <None Include="glm\gtx\associated_min_max.inl" />
+    <None Include="glm\gtx\bit.inl" />
+    <None Include="glm\gtx\closest_point.inl" />
+    <None Include="glm\gtx\color_encoding.inl" />
+    <None Include="glm\gtx\color_space.inl" />
+    <None Include="glm\gtx\color_space_YCoCg.inl" />
+    <None Include="glm\gtx\common.inl" />
+    <None Include="glm\gtx\compatibility.inl" />
+    <None Include="glm\gtx\component_wise.inl" />
+    <None Include="glm\gtx\dual_quaternion.inl" />
+    <None Include="glm\gtx\easing.inl" />
+    <None Include="glm\gtx\euler_angles.inl" />
+    <None Include="glm\gtx\extend.inl" />
+    <None Include="glm\gtx\extended_min_max.inl" />
+    <None Include="glm\gtx\exterior_product.inl" />
+    <None Include="glm\gtx\fast_exponential.inl" />
+    <None Include="glm\gtx\fast_square_root.inl" />
+    <None Include="glm\gtx\fast_trigonometry.inl" />
+    <None Include="glm\gtx\float_notmalize.inl" />
+    <None Include="glm\gtx\functions.inl" />
+    <None Include="glm\gtx\gradient_paint.inl" />
+    <None Include="glm\gtx\handed_coordinate_space.inl" />
+    <None Include="glm\gtx\hash.inl" />
+    <None Include="glm\gtx\integer.inl" />
+    <None Include="glm\gtx\intersect.inl" />
+    <None Include="glm\gtx\io.inl" />
+    <None Include="glm\gtx\log_base.inl" />
+    <None Include="glm\gtx\matrix_cross_product.inl" />
+    <None Include="glm\gtx\matrix_decompose.inl" />
+    <None Include="glm\gtx\matrix_factorisation.inl" />
+    <None Include="glm\gtx\matrix_interpolation.inl" />
+    <None Include="glm\gtx\matrix_major_storage.inl" />
+    <None Include="glm\gtx\matrix_operation.inl" />
+    <None Include="glm\gtx\matrix_query.inl" />
+    <None Include="glm\gtx\matrix_transform_2d.inl" />
+    <None Include="glm\gtx\mixed_product.inl" />
+    <None Include="glm\gtx\norm.inl" />
+    <None Include="glm\gtx\normal.inl" />
+    <None Include="glm\gtx\normalize_dot.inl" />
+    <None Include="glm\gtx\number_precision.inl" />
+    <None Include="glm\gtx\optimum_pow.inl" />
+    <None Include="glm\gtx\orthonormalize.inl" />
+    <None Include="glm\gtx\perpendicular.inl" />
+    <None Include="glm\gtx\polar_coordinates.inl" />
+    <None Include="glm\gtx\projection.inl" />
+    <None Include="glm\gtx\quaternion.inl" />
+    <None Include="glm\gtx\raw_data.inl" />
+    <None Include="glm\gtx\rotate_normalized_axis.inl" />
+    <None Include="glm\gtx\rotate_vector.inl" />
+    <None Include="glm\gtx\scalar_relational.inl" />
+    <None Include="glm\gtx\spline.inl" />
+    <None Include="glm\gtx\std_based_type.inl" />
+    <None Include="glm\gtx\string_cast.inl" />
+    <None Include="glm\gtx\texture.inl" />
+    <None Include="glm\gtx\transform.inl" />
+    <None Include="glm\gtx\transform2.inl" />
+    <None Include="glm\gtx\type_aligned.inl" />
+    <None Include="glm\gtx\type_trait.inl" />
+    <None Include="glm\gtx\vector_angle.inl" />
+    <None Include="glm\gtx\vector_query.inl" />
+    <None Include="glm\gtx\wrap.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

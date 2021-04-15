@@ -1,0 +1,8 @@
+POSIX Threads for Windows
+https://sourceforge.net/projects/pthreads4w/
+
+under Apache License - Version 2.0
+
+using Release 3.0.0
+
+(Library used by Leggiero Engine in Windows)

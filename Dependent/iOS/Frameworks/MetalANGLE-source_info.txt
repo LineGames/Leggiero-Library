@@ -1,0 +1,8 @@
+MetalANGLE
+https://github.com/kakashidinho/metalangle
+
+under attached license (BSD 3-Clause License)
+
+using Release GLES3 0.0.6
+
+(Library used by Leggiero Engine in iOS)

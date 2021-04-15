@@ -1,0 +1,10 @@
+curl
+https://curl.se/
+
+using official Windows binary from https://curl.se/windows/
+
+under attached License in COPYING.txt (MIT/X like)
+
+using Release 7.75.0
+
+(Library used by Leggiero Engine in Windows)

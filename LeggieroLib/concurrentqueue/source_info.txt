@@ -1,0 +1,8 @@
+moodycamel::ConcurrentQueue
+https://github.com/cameron314/concurrentqueue
+
+under Simplified BSD License
+
+using Release 1.0.2
+
+(Library used by Leggiero Engine)

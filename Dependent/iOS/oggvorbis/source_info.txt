@@ -1,0 +1,8 @@
+Ogg & Vorbis
+https://xiph.org/
+
+under BSD License
+
+using Ogg Release 1.3.4 and Vorbis Release 1.3.7
+
+(Library used by Leggiero Engine in iOS)
