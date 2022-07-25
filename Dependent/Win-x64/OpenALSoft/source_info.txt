@@ -3,7 +3,7 @@ https://openal-soft.org/
 
 under LGPLv2
 
-using Release 1.21.1
+using Release 1.22.2
  - used Win32 and Win64 binaries provided in the web page
 
 (Library used by Leggiero Engine in Windows)

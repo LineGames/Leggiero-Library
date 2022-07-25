@@ -3,6 +3,6 @@ https://www.openssl.org/
 
 under OpenSSL License and Original SSLeay License
 
-using Release 1.1.1j
+using Release 1.1.1q
 
 (Library used by Leggiero Engine in Windows)

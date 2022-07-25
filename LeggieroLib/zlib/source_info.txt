@@ -3,6 +3,6 @@ https://zlib.net/
 
 under zlib License
 
-using Release 1.2.11
+using Release 1.2.12
 
 (Library used by Leggiero Engine in Windows)

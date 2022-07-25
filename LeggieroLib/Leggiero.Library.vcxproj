@@ -21,13 +21,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -59,7 +59,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_LIB;ZLIB_WINAPI;ASMV;ASMINF;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_LIB;ZLIB_WINAPI;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Win-x64\pthreads4w\include\;$(ProjectDir)..\Dependent\Win-x64\PowerVR\include\;$(ProjectDir)..\Dependent\Win-x64\zlib\;$(ProjectDir)..\Dependent\Win-x64\OpenALSoft\include\;$(ProjectDir)</AdditionalIncludeDirectories>
@@ -76,7 +76,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_LIB;ZLIB_WINAPI;ASMV;ASMINF;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;ZLIB_WINAPI;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Win-x64\pthreads4w\include\;$(ProjectDir)..\Dependent\Win-x64\PowerVR\include\;$(ProjectDir)..\Dependent\Win-x64\zlib\;$(ProjectDir)..\Dependent\Win-x64\OpenALSoft\include\;$(ProjectDir)</AdditionalIncludeDirectories>
@@ -454,15 +454,12 @@
     <ClCompile Include="zlib\compress.c" />
     <ClCompile Include="zlib\crc32.c" />
     <ClCompile Include="zlib\deflate.c" />
-    <MASM Include="zlib\gvmat64.asm" />
     <ClCompile Include="zlib\gzclose.c" />
     <ClCompile Include="zlib\gzlib.c" />
     <ClCompile Include="zlib\gzread.c" />
     <ClCompile Include="zlib\gzwrite.c" />
     <ClCompile Include="zlib\infback.c" />
-    <ClCompile Include="zlib\inffas8664.c" />
     <ClCompile Include="zlib\inffast.c" />
-    <MASM Include="zlib\inffasx64.asm" />
     <ClCompile Include="zlib\inflate.c" />
     <ClCompile Include="zlib\inftrees.c" />
     <ClCompile Include="zlib\trees.c" />
