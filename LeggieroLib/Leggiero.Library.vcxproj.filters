@@ -40,17 +40,8 @@
     <Filter Include="zlib">
       <UniqueIdentifier>{f676b34b-53f2-4e73-8838-78d9a993ffce}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Android">
-      <UniqueIdentifier>{468ed6ed-67c0-42ca-8c35-0685cfbcbef0}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Android\cpufeatures">
-      <UniqueIdentifier>{e5634a00-1f94-4d45-96b2-05b8b46b7efb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="libpng">
       <UniqueIdentifier>{6f460151-e000-4c99-b950-cabf11281652}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libpng\arm">
-      <UniqueIdentifier>{a916607b-e887-429d-9ebb-f68ac61e3c60}</UniqueIdentifier>
     </Filter>
     <Filter Include="libpng\intel">
       <UniqueIdentifier>{d062b008-7f9a-40af-b508-cc988635e4c7}</UniqueIdentifier>
@@ -1012,9 +1003,6 @@
     <ClInclude Include="zlib\zutil.h">
       <Filter>zlib</Filter>
     </ClInclude>
-    <ClInclude Include="..\Dependent\Android\cpufeatures\cpu-features.h">
-      <Filter>Android\cpufeatures</Filter>
-    </ClInclude>
     <ClInclude Include="libpng\png.h">
       <Filter>libpng</Filter>
     </ClInclude>
@@ -1129,9 +1117,6 @@
     <ClCompile Include="zlib\zutil.c">
       <Filter>zlib</Filter>
     </ClCompile>
-    <ClCompile Include="..\Dependent\Android\cpufeatures\cpu-features.c">
-      <Filter>Android\cpufeatures</Filter>
-    </ClCompile>
     <ClCompile Include="libpng\png.c">
       <Filter>libpng</Filter>
     </ClCompile>
@@ -1176,18 +1161,6 @@
     </ClCompile>
     <ClCompile Include="libpng\pngwutil.c">
       <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\arm\android-ndk.c">
-      <Filter>libpng\arm</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\arm\arm_init.c">
-      <Filter>libpng\arm</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\arm\filter_neon_intrinsics.c">
-      <Filter>libpng\arm</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\arm\palette_neon_intrinsics.c">
-      <Filter>libpng\arm</Filter>
     </ClCompile>
     <ClCompile Include="libpng\intel\filter_sse2_intrinsics.c">
       <Filter>libpng\intel</Filter>

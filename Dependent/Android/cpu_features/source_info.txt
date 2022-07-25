@@ -1,0 +1,8 @@
+cpu_features
+https://github.com/google/cpu_features
+
+under Apache License 2.0
+
+using Release 0.7.0
+
+(Library used by Leggiero Engine in Android)

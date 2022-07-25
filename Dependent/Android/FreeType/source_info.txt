@@ -3,6 +3,6 @@ https://www.freetype.org/
 
 under FreeType License
 
-using Release 2.10.4
+using Release 2.12.1
 
 (Library used by Leggiero Engine in Android)

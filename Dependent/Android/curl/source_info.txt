@@ -3,6 +3,6 @@ https://curl.se/
 
 under attached License in COPYING (MIT/X like)
 
-using Release 7.75.0
+using Release 7.84.0
 
 (Library used by Leggiero Engine in Android)

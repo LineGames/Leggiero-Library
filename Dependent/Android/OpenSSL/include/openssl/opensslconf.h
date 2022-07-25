@@ -24,14 +24,14 @@ extern "C" {
  * OpenSSL was configured with the following options:
  */
 
-#ifndef OPENSSL_NO_IDEA
-# define OPENSSL_NO_IDEA
-#endif
 #ifndef OPENSSL_NO_MD2
 # define OPENSSL_NO_MD2
 #endif
 #ifndef OPENSSL_NO_MDC2
 # define OPENSSL_NO_MDC2
+#endif
+#ifndef OPENSSL_NO_RC4
+# define OPENSSL_NO_RC4
 #endif
 #ifndef OPENSSL_NO_RC5
 # define OPENSSL_NO_RC5
@@ -92,6 +92,9 @@ extern "C" {
 #endif
 #ifndef OPENSSL_NO_UBSAN
 # define OPENSSL_NO_UBSAN
+#endif
+#ifndef OPENSSL_NO_UI_CONSOLE
+# define OPENSSL_NO_UI_CONSOLE
 #endif
 #ifndef OPENSSL_NO_UNIT_TEST
 # define OPENSSL_NO_UNIT_TEST
@@ -188,10 +191,14 @@ extern "C" {
 
 #undef OPENSSL_EXPORT_VAR_AS_FUNCTION
 
+
+/* Platform specific settings */
+#if defined(__aarch64__)
+
+
 /*
  * The following are cipher-specific, but are part of the public API.
  */
-#ifdef __aarch64__
 #if !defined(OPENSSL_SYS_UEFI)
 # undef BN_LLONG
 /* Only one for the following should be defined */
@@ -199,7 +206,16 @@ extern "C" {
 # undef SIXTY_FOUR_BIT
 # undef THIRTY_TWO_BIT
 #endif
-#else
+
+#define RC4_INT unsigned char
+
+
+#elif defined(__i386__)
+
+
+/*
+ * The following are cipher-specific, but are part of the public API.
+ */
 #if !defined(OPENSSL_SYS_UEFI)
 # define BN_LLONG
 /* Only one for the following should be defined */
@@ -207,9 +223,47 @@ extern "C" {
 # undef SIXTY_FOUR_BIT
 # define THIRTY_TWO_BIT
 #endif
+
+#define RC4_INT unsigned int
+
+
+#elif defined(__x86_64__)
+
+
+/*
+ * The following are cipher-specific, but are part of the public API.
+ */
+#if !defined(OPENSSL_SYS_UEFI)
+# undef BN_LLONG
+/* Only one for the following should be defined */
+# define SIXTY_FOUR_BIT_LONG
+# undef SIXTY_FOUR_BIT
+# undef THIRTY_TWO_BIT
+#endif
+
+#define RC4_INT unsigned int
+
+
+#else
+/* Assume __arm__ */
+
+
+/*
+ * The following are cipher-specific, but are part of the public API.
+ */
+#if !defined(OPENSSL_SYS_UEFI)
+# undef BN_LLONG
+/* Only one for the following should be defined */
+# define SIXTY_FOUR_BIT_LONG
+# undef SIXTY_FOUR_BIT
+# undef THIRTY_TWO_BIT
 #endif
 
 #define RC4_INT unsigned char
+
+
+#endif
+
 
 #ifdef  __cplusplus
 }
