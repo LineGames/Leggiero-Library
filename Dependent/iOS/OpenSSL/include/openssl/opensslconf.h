@@ -27,8 +27,17 @@ extern "C" {
 #ifndef OPENSSL_SYS_iOS
 # define OPENSSL_SYS_iOS 1
 #endif
+#ifndef OPENSSL_NO_IDEA
+# define OPENSSL_NO_IDEA
+#endif
 #ifndef OPENSSL_NO_MD2
 # define OPENSSL_NO_MD2
+#endif
+#ifndef OPENSSL_NO_MDC2
+# define OPENSSL_NO_MDC2
+#endif
+#ifndef OPENSSL_NO_RC4
+# define OPENSSL_NO_RC4
 #endif
 #ifndef OPENSSL_NO_RC5
 # define OPENSSL_NO_RC5
@@ -44,11 +53,6 @@ extern "C" {
 #endif
 #ifndef OPENSSL_NO_ASAN
 # define OPENSSL_NO_ASAN
-#endif
-#if __LP64__
-#ifndef OPENSSL_NO_ASM
-# define OPENSSL_NO_ASM
-#endif
 #endif
 #ifndef OPENSSL_NO_ASYNC
 # define OPENSSL_NO_ASYNC
@@ -98,8 +102,14 @@ extern "C" {
 #ifndef OPENSSL_NO_SSL3_METHOD
 # define OPENSSL_NO_SSL3_METHOD
 #endif
+#ifndef OPENSSL_NO_TESTS
+# define OPENSSL_NO_TESTS
+#endif
 #ifndef OPENSSL_NO_UBSAN
 # define OPENSSL_NO_UBSAN
+#endif
+#ifndef OPENSSL_NO_UI_CONSOLE
+# define OPENSSL_NO_UI_CONSOLE
 #endif
 #ifndef OPENSSL_NO_UNIT_TEST
 # define OPENSSL_NO_UNIT_TEST
@@ -199,22 +209,12 @@ extern "C" {
 /*
  * The following are cipher-specific, but are part of the public API.
  */
-#if __LP64__
 #if !defined(OPENSSL_SYS_UEFI)
 # undef BN_LLONG
 /* Only one for the following should be defined */
 # define SIXTY_FOUR_BIT_LONG
 # undef SIXTY_FOUR_BIT
 # undef THIRTY_TWO_BIT
-#endif
-#else
-#if !defined(OPENSSL_SYS_UEFI)
-# define BN_LLONG
-/* Only one for the following should be defined */
-# undef SIXTY_FOUR_BIT_LONG
-# undef SIXTY_FOUR_BIT
-# define THIRTY_TWO_BIT
-#endif
 #endif
 
 #define RC4_INT unsigned char
