@@ -40,12 +40,6 @@
     <Filter Include="zlib">
       <UniqueIdentifier>{f676b34b-53f2-4e73-8838-78d9a993ffce}</UniqueIdentifier>
     </Filter>
-    <Filter Include="libpng">
-      <UniqueIdentifier>{6f460151-e000-4c99-b950-cabf11281652}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libpng\intel">
-      <UniqueIdentifier>{d062b008-7f9a-40af-b508-cc988635e4c7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="tinyxml2">
       <UniqueIdentifier>{8efe0912-1cbb-4a94-bf39-06e2e296d1ee}</UniqueIdentifier>
     </Filter>
@@ -1003,36 +997,6 @@
     <ClInclude Include="zlib\zutil.h">
       <Filter>zlib</Filter>
     </ClInclude>
-    <ClInclude Include="libpng\png.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngconf.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pnginfo.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pnglibconf.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngpriv.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngstruct.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngusr_AArch64.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngusr_Arm.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngusr_WinPC.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngusr.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
     <ClInclude Include="tinyxml2\tinyxml2.h">
       <Filter>tinyxml2</Filter>
     </ClInclude>
@@ -1113,57 +1077,6 @@
     </ClCompile>
     <ClCompile Include="zlib\zutil.c">
       <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\png.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngerror.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngget.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngmem.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngpread.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngread.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngrio.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngrtran.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngrutil.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngset.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngtrans.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngwio.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngwrite.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngwtran.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngwutil.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\intel\filter_sse2_intrinsics.c">
-      <Filter>libpng\intel</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\intel\intel_init.c">
-      <Filter>libpng\intel</Filter>
     </ClCompile>
     <ClCompile Include="tinyxml2\tinyxml2.cpp">
       <Filter>tinyxml2</Filter>
