@@ -3,6 +3,6 @@ https://github.com/kcat/openal-soft
 
 under LGPL license (as dynamic link framework)
 
-using Release 1.21.1
+using Release 1.22.2
 
 (Library used by Leggiero Engine in iOS)

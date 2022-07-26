@@ -21,13 +21,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -59,7 +59,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_LIB;ZLIB_WINAPI;ASMV;ASMINF;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_LIB;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Win-x64\pthreads4w\include\;$(ProjectDir)..\Dependent\Win-x64\PowerVR\include\;$(ProjectDir)..\Dependent\Win-x64\zlib\;$(ProjectDir)..\Dependent\Win-x64\OpenALSoft\include\;$(ProjectDir)</AdditionalIncludeDirectories>
@@ -76,7 +76,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_LIB;ZLIB_WINAPI;ASMV;ASMINF;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Win-x64\pthreads4w\include\;$(ProjectDir)..\Dependent\Win-x64\PowerVR\include\;$(ProjectDir)..\Dependent\Win-x64\zlib\;$(ProjectDir)..\Dependent\Win-x64\OpenALSoft\include\;$(ProjectDir)</AdditionalIncludeDirectories>
@@ -393,16 +393,6 @@
     <ClInclude Include="glm\vec3.hpp" />
     <ClInclude Include="glm\vec4.hpp" />
     <ClInclude Include="glm\vector_relational.hpp" />
-    <ClInclude Include="libpng\png.h" />
-    <ClInclude Include="libpng\pngconf.h" />
-    <ClInclude Include="libpng\pnginfo.h" />
-    <ClInclude Include="libpng\pnglibconf.h" />
-    <ClInclude Include="libpng\pngpriv.h" />
-    <ClInclude Include="libpng\pngstruct.h" />
-    <ClInclude Include="libpng\pngusr.h" />
-    <ClInclude Include="libpng\pngusr_AArch64.h" />
-    <ClInclude Include="libpng\pngusr_Arm.h" />
-    <ClInclude Include="libpng\pngusr_WinPC.h" />
     <ClInclude Include="minimp3\minimp3.h" />
     <ClInclude Include="minimp3\minimp3_ex.h" />
     <ClInclude Include="OpenAL.h" />
@@ -414,15 +404,6 @@
     <ClInclude Include="utfcpp\utf8\core.h" />
     <ClInclude Include="utfcpp\utf8\cpp11.h" />
     <ClInclude Include="utfcpp\utf8\unchecked.h" />
-    <ClInclude Include="zlib\crc32.h" />
-    <ClInclude Include="zlib\deflate.h" />
-    <ClInclude Include="zlib\inffast.h" />
-    <ClInclude Include="zlib\inflate.h" />
-    <ClInclude Include="zlib\inftrees.h" />
-    <ClInclude Include="zlib\trees.h" />
-    <ClInclude Include="zlib\zconf.h" />
-    <ClInclude Include="zlib\zlib.h" />
-    <ClInclude Include="zlib\zutil.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AHEasing\easing.c" />
@@ -431,43 +412,8 @@
     <ClCompile Include="fmt\src\format.cc" />
     <ClCompile Include="fmt\src\os.cc" />
     <ClCompile Include="glm\detail\glm.cpp" />
-    <ClCompile Include="libpng\intel\filter_sse2_intrinsics.c" />
-    <ClCompile Include="libpng\intel\intel_init.c" />
-    <ClCompile Include="libpng\png.c" />
-    <ClCompile Include="libpng\pngerror.c" />
-    <ClCompile Include="libpng\pngget.c" />
-    <ClCompile Include="libpng\pngmem.c" />
-    <ClCompile Include="libpng\pngpread.c" />
-    <ClCompile Include="libpng\pngread.c" />
-    <ClCompile Include="libpng\pngrio.c" />
-    <ClCompile Include="libpng\pngrtran.c" />
-    <ClCompile Include="libpng\pngrutil.c" />
-    <ClCompile Include="libpng\pngset.c" />
-    <ClCompile Include="libpng\pngtrans.c" />
-    <ClCompile Include="libpng\pngwio.c" />
-    <ClCompile Include="libpng\pngwrite.c" />
-    <ClCompile Include="libpng\pngwtran.c" />
-    <ClCompile Include="libpng\pngwutil.c" />
     <ClCompile Include="minimp3\minimp3.cpp" />
     <ClCompile Include="tinyxml2\tinyxml2.cpp" />
-    <ClCompile Include="zlib\adler32.c" />
-    <ClCompile Include="zlib\compress.c" />
-    <ClCompile Include="zlib\crc32.c" />
-    <ClCompile Include="zlib\deflate.c" />
-    <MASM Include="zlib\gvmat64.asm" />
-    <ClCompile Include="zlib\gzclose.c" />
-    <ClCompile Include="zlib\gzlib.c" />
-    <ClCompile Include="zlib\gzread.c" />
-    <ClCompile Include="zlib\gzwrite.c" />
-    <ClCompile Include="zlib\infback.c" />
-    <ClCompile Include="zlib\inffas8664.c" />
-    <ClCompile Include="zlib\inffast.c" />
-    <MASM Include="zlib\inffasx64.asm" />
-    <ClCompile Include="zlib\inflate.c" />
-    <ClCompile Include="zlib\inftrees.c" />
-    <ClCompile Include="zlib\trees.c" />
-    <ClCompile Include="zlib\uncompr.c" />
-    <ClCompile Include="zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="glm\detail\func_common.inl" />

@@ -3,6 +3,6 @@ https://fmt.dev/
 
 under License attached (MIT-like, a sort of free / no warranty license)
 
-using Release 7.1.3
+using Release 9.0.0
 
 (Library used by Leggiero Engine)

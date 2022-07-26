@@ -37,15 +37,6 @@
     <Filter Include="glm\simd">
       <UniqueIdentifier>{98cb2bae-26f0-47a1-9743-1f51f5e278a4}</UniqueIdentifier>
     </Filter>
-    <Filter Include="zlib">
-      <UniqueIdentifier>{f676b34b-53f2-4e73-8838-78d9a993ffce}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libpng">
-      <UniqueIdentifier>{6f460151-e000-4c99-b950-cabf11281652}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="libpng\intel">
-      <UniqueIdentifier>{d062b008-7f9a-40af-b508-cc988635e4c7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="tinyxml2">
       <UniqueIdentifier>{8efe0912-1cbb-4a94-bf39-06e2e296d1ee}</UniqueIdentifier>
     </Filter>
@@ -976,63 +967,6 @@
       <Filter>glm\detail</Filter>
     </ClInclude>
     <ClInclude Include="GLES3.h" />
-    <ClInclude Include="zlib\crc32.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="zlib\deflate.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="zlib\inffast.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="zlib\inflate.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="zlib\inftrees.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="zlib\trees.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="zlib\zconf.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="zlib\zlib.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="zlib\zutil.h">
-      <Filter>zlib</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\png.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngconf.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pnginfo.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pnglibconf.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngpriv.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngstruct.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngusr_AArch64.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngusr_Arm.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngusr_WinPC.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
-    <ClInclude Include="libpng\pngusr.h">
-      <Filter>libpng</Filter>
-    </ClInclude>
     <ClInclude Include="tinyxml2\tinyxml2.h">
       <Filter>tinyxml2</Filter>
     </ClInclude>
@@ -1068,105 +1002,6 @@
     </ClCompile>
     <ClCompile Include="glm\detail\glm.cpp">
       <Filter>glm\detail</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\adler32.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\compress.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\crc32.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\deflate.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\gzclose.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\gzlib.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\gzread.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\gzwrite.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\infback.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\inffas8664.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\inffast.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\inflate.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\inftrees.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\trees.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\uncompr.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="zlib\zutil.c">
-      <Filter>zlib</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\png.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngerror.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngget.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngmem.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngpread.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngread.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngrio.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngrtran.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngrutil.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngset.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngtrans.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngwio.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngwrite.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngwtran.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\pngwutil.c">
-      <Filter>libpng</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\intel\filter_sse2_intrinsics.c">
-      <Filter>libpng\intel</Filter>
-    </ClCompile>
-    <ClCompile Include="libpng\intel\intel_init.c">
-      <Filter>libpng\intel</Filter>
     </ClCompile>
     <ClCompile Include="tinyxml2\tinyxml2.cpp">
       <Filter>tinyxml2</Filter>
@@ -1593,13 +1428,5 @@
     <None Include="glm\detail\type_vec4_simd.inl">
       <Filter>glm\detail</Filter>
     </None>
-  </ItemGroup>
-  <ItemGroup>
-    <MASM Include="zlib\gvmat64.asm">
-      <Filter>zlib</Filter>
-    </MASM>
-    <MASM Include="zlib\inffasx64.asm">
-      <Filter>zlib</Filter>
-    </MASM>
   </ItemGroup>
 </Project>

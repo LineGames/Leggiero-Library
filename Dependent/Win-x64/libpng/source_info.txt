@@ -1,0 +1,8 @@
+libpng
+http://www.libpng.org/pub/png/libpng.html
+
+under libpng License
+
+using Release 1.6.37
+
+(Library used by Leggiero Engine in Windows)
