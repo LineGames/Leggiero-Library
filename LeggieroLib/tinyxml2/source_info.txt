@@ -3,6 +3,6 @@ https://github.com/leethomason/tinyxml2
 
 under zlib License
 
-using Release 8.0.0
+using Release 9.0.0
 
 (Library used by Leggiero Engine)

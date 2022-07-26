@@ -59,7 +59,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_LIB;ZLIB_WINAPI;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_DEBUG;_LIB;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Win-x64\pthreads4w\include\;$(ProjectDir)..\Dependent\Win-x64\PowerVR\include\;$(ProjectDir)..\Dependent\Win-x64\zlib\;$(ProjectDir)..\Dependent\Win-x64\OpenALSoft\include\;$(ProjectDir)</AdditionalIncludeDirectories>
@@ -76,7 +76,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_LIB;ZLIB_WINAPI;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>NDEBUG;_LIB;WIN64;PNG_USER_CONFIG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
       <LanguageStandard>stdcpp17</LanguageStandard>
       <AdditionalIncludeDirectories>$(ProjectDir)..\Dependent\Win-x64\pthreads4w\include\;$(ProjectDir)..\Dependent\Win-x64\PowerVR\include\;$(ProjectDir)..\Dependent\Win-x64\zlib\;$(ProjectDir)..\Dependent\Win-x64\OpenALSoft\include\;$(ProjectDir)</AdditionalIncludeDirectories>
@@ -404,15 +404,6 @@
     <ClInclude Include="utfcpp\utf8\core.h" />
     <ClInclude Include="utfcpp\utf8\cpp11.h" />
     <ClInclude Include="utfcpp\utf8\unchecked.h" />
-    <ClInclude Include="zlib\crc32.h" />
-    <ClInclude Include="zlib\deflate.h" />
-    <ClInclude Include="zlib\inffast.h" />
-    <ClInclude Include="zlib\inflate.h" />
-    <ClInclude Include="zlib\inftrees.h" />
-    <ClInclude Include="zlib\trees.h" />
-    <ClInclude Include="zlib\zconf.h" />
-    <ClInclude Include="zlib\zlib.h" />
-    <ClInclude Include="zlib\zutil.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AHEasing\easing.c" />
@@ -423,21 +414,6 @@
     <ClCompile Include="glm\detail\glm.cpp" />
     <ClCompile Include="minimp3\minimp3.cpp" />
     <ClCompile Include="tinyxml2\tinyxml2.cpp" />
-    <ClCompile Include="zlib\adler32.c" />
-    <ClCompile Include="zlib\compress.c" />
-    <ClCompile Include="zlib\crc32.c" />
-    <ClCompile Include="zlib\deflate.c" />
-    <ClCompile Include="zlib\gzclose.c" />
-    <ClCompile Include="zlib\gzlib.c" />
-    <ClCompile Include="zlib\gzread.c" />
-    <ClCompile Include="zlib\gzwrite.c" />
-    <ClCompile Include="zlib\infback.c" />
-    <ClCompile Include="zlib\inffast.c" />
-    <ClCompile Include="zlib\inflate.c" />
-    <ClCompile Include="zlib\inftrees.c" />
-    <ClCompile Include="zlib\trees.c" />
-    <ClCompile Include="zlib\uncompr.c" />
-    <ClCompile Include="zlib\zutil.c" />
   </ItemGroup>
   <ItemGroup>
     <None Include="glm\detail\func_common.inl" />
