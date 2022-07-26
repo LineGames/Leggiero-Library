@@ -12,24 +12,6 @@
 		1630464925D190D30062C67F /* format.cc in Sources */ = {isa = PBXBuildFile; fileRef = 1630464725D190D30062C67F /* format.cc */; };
 		163046A525D191B90062C67F /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1630467B25D191B70062C67F /* glm.cpp */; };
 		1630480D25D192BC0062C67F /* tinyxml2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1630480B25D192BC0062C67F /* tinyxml2.cpp */; };
-		1630482225D195ED0062C67F /* arm_init.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630481F25D195EC0062C67F /* arm_init.c */; };
-		1630482325D195ED0062C67F /* filter_neon_intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630482025D195ED0062C67F /* filter_neon_intrinsics.c */; };
-		1630482425D195ED0062C67F /* palette_neon_intrinsics.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630482125D195ED0062C67F /* palette_neon_intrinsics.c */; };
-		1630483F25D195FF0062C67F /* pngerror.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630482625D195FD0062C67F /* pngerror.c */; };
-		1630484025D195FF0062C67F /* pngtrans.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630482725D195FD0062C67F /* pngtrans.c */; };
-		1630484125D195FF0062C67F /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630482925D195FE0062C67F /* pngwtran.c */; };
-		1630484225D195FF0062C67F /* pngrtran.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630482E25D195FE0062C67F /* pngrtran.c */; };
-		1630484325D195FF0062C67F /* pngwio.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483025D195FE0062C67F /* pngwio.c */; };
-		1630484425D195FF0062C67F /* pngpread.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483125D195FE0062C67F /* pngpread.c */; };
-		1630484525D195FF0062C67F /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483325D195FE0062C67F /* pngwrite.c */; };
-		1630484625D195FF0062C67F /* pngrio.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483425D195FE0062C67F /* pngrio.c */; };
-		1630484725D195FF0062C67F /* pngset.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483525D195FE0062C67F /* pngset.c */; };
-		1630484825D195FF0062C67F /* png.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483625D195FE0062C67F /* png.c */; };
-		1630484925D195FF0062C67F /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483725D195FF0062C67F /* pngwutil.c */; };
-		1630484A25D195FF0062C67F /* pngget.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483825D195FF0062C67F /* pngget.c */; };
-		1630484B25D195FF0062C67F /* pngmem.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483B25D195FF0062C67F /* pngmem.c */; };
-		1630484C25D195FF0062C67F /* pngread.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483C25D195FF0062C67F /* pngread.c */; };
-		1630484D25D195FF0062C67F /* pngrutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 1630483D25D195FF0062C67F /* pngrutil.c */; };
 		16823DD125F6847600440BC4 /* cencode.c in Sources */ = {isa = PBXBuildFile; fileRef = 16823DCF25F6847600440BC4 /* cencode.c */; };
 		16823DD225F6847600440BC4 /* cdecode.c in Sources */ = {isa = PBXBuildFile; fileRef = 16823DD025F6847600440BC4 /* cdecode.c */; };
 		16C3DC9A2614BC2600F110AC /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 16C3DC992614BC2600F110AC /* easing.c */; };
@@ -497,34 +479,6 @@
 		1630480B25D192BC0062C67F /* tinyxml2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = tinyxml2.cpp; path = tinyxml2/tinyxml2.cpp; sourceTree = "<group>"; };
 		1630480C25D192BC0062C67F /* tinyxml2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = tinyxml2.h; path = tinyxml2/tinyxml2.h; sourceTree = "<group>"; };
 		1630481725D1940F0062C67F /* GLES3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLES3.h; sourceTree = "<group>"; };
-		1630481F25D195EC0062C67F /* arm_init.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = arm_init.c; path = libpng/arm/arm_init.c; sourceTree = "<group>"; };
-		1630482025D195ED0062C67F /* filter_neon_intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = filter_neon_intrinsics.c; path = libpng/arm/filter_neon_intrinsics.c; sourceTree = "<group>"; };
-		1630482125D195ED0062C67F /* palette_neon_intrinsics.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = palette_neon_intrinsics.c; path = libpng/arm/palette_neon_intrinsics.c; sourceTree = "<group>"; };
-		1630482625D195FD0062C67F /* pngerror.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngerror.c; path = libpng/pngerror.c; sourceTree = "<group>"; };
-		1630482725D195FD0062C67F /* pngtrans.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngtrans.c; path = libpng/pngtrans.c; sourceTree = "<group>"; };
-		1630482825D195FD0062C67F /* pnglibconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pnglibconf.h; path = libpng/pnglibconf.h; sourceTree = "<group>"; };
-		1630482925D195FE0062C67F /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwtran.c; path = libpng/pngwtran.c; sourceTree = "<group>"; };
-		1630482A25D195FE0062C67F /* pnginfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pnginfo.h; path = libpng/pnginfo.h; sourceTree = "<group>"; };
-		1630482B25D195FE0062C67F /* png.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = png.h; path = libpng/png.h; sourceTree = "<group>"; };
-		1630482C25D195FE0062C67F /* pngstruct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pngstruct.h; path = libpng/pngstruct.h; sourceTree = "<group>"; };
-		1630482D25D195FE0062C67F /* pngpriv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pngpriv.h; path = libpng/pngpriv.h; sourceTree = "<group>"; };
-		1630482E25D195FE0062C67F /* pngrtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngrtran.c; path = libpng/pngrtran.c; sourceTree = "<group>"; };
-		1630482F25D195FE0062C67F /* pngdebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pngdebug.h; path = libpng/pngdebug.h; sourceTree = "<group>"; };
-		1630483025D195FE0062C67F /* pngwio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwio.c; path = libpng/pngwio.c; sourceTree = "<group>"; };
-		1630483125D195FE0062C67F /* pngpread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngpread.c; path = libpng/pngpread.c; sourceTree = "<group>"; };
-		1630483225D195FE0062C67F /* pngusr_Arm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pngusr_Arm.h; path = libpng/pngusr_Arm.h; sourceTree = "<group>"; };
-		1630483325D195FE0062C67F /* pngwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwrite.c; path = libpng/pngwrite.c; sourceTree = "<group>"; };
-		1630483425D195FE0062C67F /* pngrio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngrio.c; path = libpng/pngrio.c; sourceTree = "<group>"; };
-		1630483525D195FE0062C67F /* pngset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngset.c; path = libpng/pngset.c; sourceTree = "<group>"; };
-		1630483625D195FE0062C67F /* png.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = png.c; path = libpng/png.c; sourceTree = "<group>"; };
-		1630483725D195FF0062C67F /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwutil.c; path = libpng/pngwutil.c; sourceTree = "<group>"; };
-		1630483825D195FF0062C67F /* pngget.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngget.c; path = libpng/pngget.c; sourceTree = "<group>"; };
-		1630483925D195FF0062C67F /* pngconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pngconf.h; path = libpng/pngconf.h; sourceTree = "<group>"; };
-		1630483A25D195FF0062C67F /* pngusr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pngusr.h; path = libpng/pngusr.h; sourceTree = "<group>"; };
-		1630483B25D195FF0062C67F /* pngmem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngmem.c; path = libpng/pngmem.c; sourceTree = "<group>"; };
-		1630483C25D195FF0062C67F /* pngread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngread.c; path = libpng/pngread.c; sourceTree = "<group>"; };
-		1630483D25D195FF0062C67F /* pngrutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngrutil.c; path = libpng/pngrutil.c; sourceTree = "<group>"; };
-		1630483E25D195FF0062C67F /* pngusr_AArch64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pngusr_AArch64.h; path = libpng/pngusr_AArch64.h; sourceTree = "<group>"; };
 		1673E58025B7112D0018667D /* libLeggieroLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLeggieroLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		16823DCB25F6846A00440BC4 /* cdecode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cdecode.h; path = b64/cdecode.h; sourceTree = "<group>"; };
 		16823DCC25F6846A00440BC4 /* cencode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cencode.h; path = b64/cencode.h; sourceTree = "<group>"; };
@@ -1101,56 +1055,12 @@
 			name = tinyxml2;
 			sourceTree = "<group>";
 		};
-		1630481D25D195C90062C67F /* libpng */ = {
-			isa = PBXGroup;
-			children = (
-				1630481E25D195D10062C67F /* arm */,
-				1630483625D195FE0062C67F /* png.c */,
-				1630482B25D195FE0062C67F /* png.h */,
-				1630483925D195FF0062C67F /* pngconf.h */,
-				1630482F25D195FE0062C67F /* pngdebug.h */,
-				1630482625D195FD0062C67F /* pngerror.c */,
-				1630483825D195FF0062C67F /* pngget.c */,
-				1630482A25D195FE0062C67F /* pnginfo.h */,
-				1630482825D195FD0062C67F /* pnglibconf.h */,
-				1630483B25D195FF0062C67F /* pngmem.c */,
-				1630483125D195FE0062C67F /* pngpread.c */,
-				1630482D25D195FE0062C67F /* pngpriv.h */,
-				1630483C25D195FF0062C67F /* pngread.c */,
-				1630483425D195FE0062C67F /* pngrio.c */,
-				1630482E25D195FE0062C67F /* pngrtran.c */,
-				1630483D25D195FF0062C67F /* pngrutil.c */,
-				1630483525D195FE0062C67F /* pngset.c */,
-				1630482C25D195FE0062C67F /* pngstruct.h */,
-				1630482725D195FD0062C67F /* pngtrans.c */,
-				1630483E25D195FF0062C67F /* pngusr_AArch64.h */,
-				1630483225D195FE0062C67F /* pngusr_Arm.h */,
-				1630483A25D195FF0062C67F /* pngusr.h */,
-				1630483025D195FE0062C67F /* pngwio.c */,
-				1630483325D195FE0062C67F /* pngwrite.c */,
-				1630482925D195FE0062C67F /* pngwtran.c */,
-				1630483725D195FF0062C67F /* pngwutil.c */,
-			);
-			name = libpng;
-			sourceTree = "<group>";
-		};
-		1630481E25D195D10062C67F /* arm */ = {
-			isa = PBXGroup;
-			children = (
-				1630481F25D195EC0062C67F /* arm_init.c */,
-				1630482025D195ED0062C67F /* filter_neon_intrinsics.c */,
-				1630482125D195ED0062C67F /* palette_neon_intrinsics.c */,
-			);
-			name = arm;
-			sourceTree = "<group>";
-		};
 		1673E57725B7112D0018667D = {
 			isa = PBXGroup;
 			children = (
 				16C3DC972614BC1700F110AC /* AHEasing */,
 				16823DC925F6845600440BC4 /* b64 */,
 				162C475425E7EB2200956A15 /* minimp3 */,
-				1630481D25D195C90062C67F /* libpng */,
 				1630480A25D192A90062C67F /* tinyxml2 */,
 				163047FE25D1924E0062C67F /* utfcpp */,
 				163047FB25D192380062C67F /* readerwriterqueue */,
@@ -1257,32 +1167,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1630484025D195FF0062C67F /* pngtrans.c in Sources */,
 				1630480D25D192BC0062C67F /* tinyxml2.cpp in Sources */,
 				16C3DC9A2614BC2600F110AC /* easing.c in Sources */,
-				1630484D25D195FF0062C67F /* pngrutil.c in Sources */,
 				16823DD125F6847600440BC4 /* cencode.c in Sources */,
-				1630482325D195ED0062C67F /* filter_neon_intrinsics.c in Sources */,
-				1630484525D195FF0062C67F /* pngwrite.c in Sources */,
 				16823DD225F6847600440BC4 /* cdecode.c in Sources */,
-				1630484425D195FF0062C67F /* pngpread.c in Sources */,
-				1630483F25D195FF0062C67F /* pngerror.c in Sources */,
-				1630482225D195ED0062C67F /* arm_init.c in Sources */,
-				1630484925D195FF0062C67F /* pngwutil.c in Sources */,
-				1630484325D195FF0062C67F /* pngwio.c in Sources */,
-				1630484625D195FF0062C67F /* pngrio.c in Sources */,
-				1630484825D195FF0062C67F /* png.c in Sources */,
-				1630484A25D195FF0062C67F /* pngget.c in Sources */,
 				163046A525D191B90062C67F /* glm.cpp in Sources */,
 				162C475825E7EB4300956A15 /* minimp3.cpp in Sources */,
-				1630484B25D195FF0062C67F /* pngmem.c in Sources */,
-				1630484725D195FF0062C67F /* pngset.c in Sources */,
-				1630482425D195ED0062C67F /* palette_neon_intrinsics.c in Sources */,
-				1630484225D195FF0062C67F /* pngrtran.c in Sources */,
 				1630464925D190D30062C67F /* format.cc in Sources */,
-				1630484125D195FF0062C67F /* pngwtran.c in Sources */,
 				1630464825D190D30062C67F /* os.cc in Sources */,
-				1630484C25D195FF0062C67F /* pngread.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

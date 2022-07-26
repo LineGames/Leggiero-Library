@@ -1,11 +1,10 @@
-/* ftconfig.h.  Generated from ftconfig.h.in by configure.  */
 /****************************************************************************
  *
  * ftconfig.h.in
  *
  *   UNIX-specific configuration file (specification only).
  *
- * Copyright (C) 1996-2020 by
+ * Copyright (C) 1996-2022 by
  * David Turner, Robert Wilhelm, and Werner Lemberg.
  *
  * This file is part of the FreeType project, and may only be used,
@@ -42,20 +41,6 @@
 
 #define HAVE_UNISTD_H 1
 #define HAVE_FCNTL_H 1
-
-/* #undef FT_USE_AUTOCONF_SIZEOF_TYPES */
-#ifdef FT_USE_AUTOCONF_SIZEOF_TYPES
-
-#define SIZEOF_INT 4
-#if __LP64__
-#define SIZEOF_LONG 8
-#else
-#define SIZEOF_LONG 4
-#endif
-#define FT_SIZEOF_INT  SIZEOF_INT
-#define FT_SIZEOF_LONG SIZEOF_LONG
-
-#endif /* FT_USE_AUTOCONF_SIZEOF_TYPES */
 
 #include <freetype/config/integer-types.h>
 #include <freetype/config/public-macros.h>
